@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%								~~~~ EDITOR'S NOTE ~~~~
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the how to write a thesis in LaTeX guide by Laurens Stoop 
+% Thanks goes to:
+% 			- Dries van Oosten 		| For 'his' way of writing a thesis
+%			- Aldo de Witte				| For his comments and tips
+%			- Niels Schaminée 			| For being patient while is was learning Tikz instead of writing our report
+%
+%
+%
+%
+% This document is inteded to be a style guide to a nice and fancy LaTeX thesis.
+%			- Comments are used to explain code (% sign)
+%			- Make it your own by selecting only the things you want
+%			- If in possible options you meet a couple of dots (...) more options are available (see documentation of pkg)
+%
+% Comments, remarks and more: email me at laurensstoop@protonmail.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%							   ~~~~ END OF: EDITOR'S NOTE ~~~~
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%		Class definition
+
+% The document class Book is used as this allows the use of the front-, main- and endmatter commands
+\documentclass[twosided,openright]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%		The thesis style
+\input{stylesheet}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%		The main document caller
+\begin{document}
+
+\frontmatter
+
+\input{./tex/frontmatter.tex}
+
+\mainmatter
+
+\input{./tex/filler.tex}
+
+\input{./tex/math.tex}
+
+\end{document}
